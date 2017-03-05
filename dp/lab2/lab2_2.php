@@ -15,4 +15,4 @@ function find_number($sum, $size) {
 
 $size = 7;
 $sum = 13;
-echo find_number($sum, $size);
+echo "Число $size-значных чисел сумма которых равна $sum - " . find_number($sum, $size);

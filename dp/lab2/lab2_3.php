@@ -26,5 +26,5 @@ function edit_distance($str1, $str2) {
 
 $str1 = 'Grvski';
 $str2 = 'Alex Gurevskiy';
-echo 'Растояние Левенштейна - '. edit_distance($str1, $str2).'<br/>';
-echo 'Растояние Левенштейна с помощью втроенной функции в PHP - '. levenshtein($str1, $str2); // Встроенная в PHP
+echo 'Расстояние Левенштейна - '. edit_distance($str1, $str2).'<br/>';
+echo 'Расстояние Левенштейна с помощью втроенной функции в PHP - '. levenshtein($str1, $str2); // Встроенная в PHP
