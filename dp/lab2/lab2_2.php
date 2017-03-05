@@ -2,9 +2,7 @@
 
 function find_number($sum, $size) {
 	$res = 0;
-
 	if($sum < 0) return 0;
-
 	if($size == 1) {
 		if($sum > 9) return 0;
 		else return 1;
@@ -17,5 +15,4 @@ function find_number($sum, $size) {
 
 $size = 7;
 $sum = 13;
-
 echo find_number($sum, $size);

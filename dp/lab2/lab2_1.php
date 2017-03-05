@@ -40,13 +40,13 @@ function restore_path($array, $res_arr, $max_elem) {
 	for($i=count($res_arr); $i > 0; $i--) {
 		for($j=0; $j < count($res_arr[$i]); $j++) {
 			if($res_arr[$i][$j] == $max_elem) {
-				echo $array[$i][$j] . "(".($i+1).", ".($j+1).") <- ";
+				echo $array[$i][$j] . "/(".($i+1).", ".($j+1).") ← ";
 				$max_elem -= $array[$i][$j];
 				break;
 			}
 		}
 	}
-	echo "{$array[0][0]}(1, 1) <br/>";
+	echo "{$array[0][0]}/(1, 1) <br/>";
 }
 
 $array = genereate_array(5);
