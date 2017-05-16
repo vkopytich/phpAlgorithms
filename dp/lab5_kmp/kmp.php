@@ -52,12 +52,10 @@ function compute_lps ($pat, $M, &$lps) {
 }
 
 
-$text = "the quick brown the fox jumps over the lazy dog";
-$pattern = "the";
+$text = "Alex Alexandr Alexeev";
+$pattern = "Alex";
 
-$value = kmp_search($pattern, $text);
+echo (kmp_search($pattern, $text)) ? 'Found indexes: ' . implode(', ', kmp_search($pattern, $text)) : 'Not found anything';
 
-echo implode(', ', $value);
-
-
-
+// OUTPUT:
+// Found indexes: 0, 5, 14
